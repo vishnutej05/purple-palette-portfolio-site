@@ -13,23 +13,11 @@ const HeroSection = () => {
         />
       </div>
       
-      {/* Decorative elements with proper positioning and borders */}
-      <img 
-        src="/lovable-uploads/04f5d37e-af37-427f-96a6-79f4cffab116.png" 
-        alt="Decorative element" 
-        className="absolute top-36 right-24 w-16 h-16 opacity-70 border-2 border-custom-black rounded-lg p-2"
-      />
-      <img 
-        src="/lovable-uploads/0d698e61-99cc-4190-ac9f-c5d3d240174e.png" 
-        alt="Decorative element" 
-        className="absolute bottom-80 left-24 w-20 h-20 opacity-70 border-2 border-custom-black rounded-lg p-2"
-      />
-
       {/* Main content container */}
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center">
-          {/* Hello badge - centered above heading */}
-          <div className="flex justify-center mb-8">
+          {/* Hello badge - centered above heading with decorative element */}
+          <div className="flex justify-center mb-8 relative">
             <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 shadow-lg border border-gray-200">
               <span className="text-custom-black font-medium">Hello!</span>
               <img 
@@ -38,16 +26,28 @@ const HeroSection = () => {
                 className="w-6 h-6"
               />
             </div>
+            {/* Decorative element at top right of Hello badge */}
+            <img 
+              src="/lovable-uploads/c1e7dd18-8f9b-4bf3-8abb-55e831afc420.png" 
+              alt="Decorative element" 
+              className="absolute -top-2 -right-8 w-12 h-12 opacity-70"
+            />
           </div>
 
-          {/* Main heading - centered */}
-          <div className="mb-16">
+          {/* Main heading - centered with decorative element */}
+          <div className="mb-16 relative">
             <h1 className="text-6xl lg:text-7xl font-bold text-custom-black leading-tight mb-4">
               I'm Ritika,
             </h1>
             <h2 className="text-6xl lg:text-7xl font-bold text-custom-black leading-tight">
               UI/UX Designer
             </h2>
+            {/* Decorative element at bottom left of main heading */}
+            <img 
+              src="/lovable-uploads/8e86c49a-4aba-44e8-bb32-9fd30aa439b5.png" 
+              alt="Decorative element" 
+              className="absolute -bottom-8 -left-16 w-16 h-16 opacity-70"
+            />
           </div>
         </div>
       </div>
