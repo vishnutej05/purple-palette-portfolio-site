@@ -4,19 +4,19 @@ import React from 'react';
 const HeroSection = () => {
   return (
     <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
-      {/* Background Mandala - positioned at bottom with higher opacity */}
-      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/4">
+      {/* Background Mandala - positioned at bottom with slow floating animation */}
+      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/3 animate-float">
         <img 
           src="/lovable-uploads/6e7f3587-9b4e-45e6-8878-0551e052a9b9.png" 
           alt="Mandala Background" 
-          className="w-[700px] h-[700px] object-contain opacity-70"
+          className="w-[700px] h-[700px] object-contain opacity-80"
         />
       </div>
       
-      {/* Hello badge section - positioned near top */}
-      <div className="container mx-auto px-6 pt-40">
+      {/* Hello badge section - slides down from top with delay */}
+      <div className="container mx-auto px-6 pt-32">
         <div className="text-center">
-          <div className="flex justify-center mb-8 relative">
+          <div className="flex justify-center mb-8 relative animate-[slide-down_1.2s_ease-out_0.5s_both]">
             <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 shadow-lg border border-gray-200 relative">
               <span className="text-custom-black font-medium">Hello!</span>
               <img 
@@ -35,13 +35,13 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Main heading section - positioned below hello */}
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center relative">
-          <h1 className="text-6xl lg:text-7xl font-bold text-custom-black leading-tight mb-4">
+      {/* Main heading section - slides down from top with larger delay */}
+      <div className="container mx-auto px-6 relative z-10 -mt-8">
+        <div className="text-center relative animate-[slide-down_1.2s_ease-out_1s_both]">
+          <h1 className="text-5xl lg:text-6xl font-bold text-custom-black leading-tight mb-4">
             I'm Ritika,
           </h1>
-          <h2 className="text-6xl lg:text-7xl font-bold text-custom-black leading-tight">
+          <h2 className="text-5xl lg:text-6xl font-bold text-custom-black leading-tight">
             UI/UX Designer
           </h2>
           {/* Decorative element stuck to bottom left of main heading */}
@@ -53,11 +53,20 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Quote and Rating section - positioned at extreme ends */}
-      <div className="absolute top-1/2 transform -translate-y-1/2 w-full px-8 z-20">
-        <div className="flex justify-between items-center">
-          {/* Quote section - left end */}
-          <div className="w-80">
+      {/* Character image - rises from bottom */}
+      <div className="absolute bottom-4 right-8 z-20 animate-[slide-up_1.5s_ease-out_1.5s_both]">
+        <img 
+          src="/lovable-uploads/6da65231-3abc-48b0-a04e-b4ca632ac051.png" 
+          alt="Character" 
+          className="w-64 h-auto"
+        />
+      </div>
+
+      {/* Quote and Rating section - positioned at bottom with side sliding animations */}
+      <div className="absolute bottom-16 w-full px-8 z-20">
+        <div className="flex justify-between items-end">
+          {/* Quote section - slides in from left */}
+          <div className="w-80 animate-[slide-right_1.2s_ease-out_2s_both]">
             <div className="flex flex-col items-start gap-4">
               <img 
                 src="/lovable-uploads/deced0ec-f4d0-4be8-8a67-e7e016ebab52.png" 
@@ -70,8 +79,8 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Rating section - right end */}
-          <div className="w-80">
+          {/* Rating section - slides in from right */}
+          <div className="w-80 animate-[slide-left_1.2s_ease-out_2s_both]">
             <div className="text-right">
               <div className="flex justify-end mb-3">
                 <img 
