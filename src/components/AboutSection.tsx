@@ -37,7 +37,7 @@ const AboutSection = () => {
             About <span className="text-custom-purple">Me</span>
           </h2>
           <p className="text-lg lg:text-xl leading-relaxed max-w-4xl text-gray-300">
-            Aspiring UI/UX Designer (who also loves mandala art, like you can see ><) with a strong 
+            Aspiring UI/UX Designer (who also loves mandala art, like you can see &gt;&lt;) with a strong 
             foundation in design thinking and a keen eye for crafting user-centric, intuitive interfaces. 
             Experienced in user research, wire framing, and collaborating across teams to create 
             seamless and visually engaging digital experiences. Passionate about solving real-world 
