@@ -4,12 +4,12 @@ import React from 'react';
 const HeroSection = () => {
   return (
     <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
-      {/* Background Mandala - positioned at bottom with subtle upward movement when character appears */}
+      {/* Background Mandala - positioned at bottom with 75% height and subtle upward movement */}
       <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 animate-[bg-float_2s_ease-out_1.5s_both]">
         <img 
-          src="/lovable-uploads/6e7f3587-9b4e-45e6-8878-0551e052a9b9.png" 
+          src="/lovable-uploads/8f7e471a-1d3c-4ff4-b1a5-6bdc7a6e7010.png" 
           alt="Mandala Background" 
-          className="w-[700px] h-[700px] object-contain opacity-80"
+          className="w-[525px] h-[525px] object-contain opacity-80"
         />
       </div>
       
@@ -53,10 +53,10 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Character image - rises from bottom middle with larger size */}
-      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-20 animate-[rise-from-bottom_1.5s_ease-out_1.5s_both]">
+      {/* Character image - rises smoothly from bottom center */}
+      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-x-0 z-20 animate-[rise-from-bottom_1.5s_ease-out_1.5s_both]">
         <img 
-          src="/lovable-uploads/6da65231-3abc-48b0-a04e-b4ca632ac051.png" 
+          src="/lovable-uploads/7b7efddc-574a-4169-8b86-533e84823bef.png" 
           alt="Character" 
           className="w-96 h-auto"
         />
