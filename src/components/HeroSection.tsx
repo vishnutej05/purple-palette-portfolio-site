@@ -4,8 +4,8 @@ import React from 'react';
 const HeroSection = () => {
   return (
     <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
-      {/* Background Mandala - positioned at bottom with slow floating animation */}
-      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/3 animate-float">
+      {/* Background Mandala - positioned at bottom with subtle upward movement when character appears */}
+      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 animate-[bg-float_2s_ease-out_1.5s_both]">
         <img 
           src="/lovable-uploads/6e7f3587-9b4e-45e6-8878-0551e052a9b9.png" 
           alt="Mandala Background" 
@@ -14,7 +14,7 @@ const HeroSection = () => {
       </div>
       
       {/* Hello badge section - slides down from top with delay */}
-      <div className="container mx-auto px-6 pt-32">
+      <div className="container mx-auto px-6 pt-20">
         <div className="text-center">
           <div className="flex justify-center mb-8 relative animate-[slide-down_1.2s_ease-out_0.5s_both]">
             <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 shadow-lg border border-gray-200 relative">
@@ -54,7 +54,7 @@ const HeroSection = () => {
       </div>
 
       {/* Character image - rises from bottom */}
-      <div className="absolute bottom-4 right-8 z-20 animate-[slide-up_1.5s_ease-out_1.5s_both]">
+      <div className="absolute bottom-4 right-8 z-20 animate-[rise-from-bottom_1.5s_ease-out_1.5s_both]">
         <img 
           src="/lovable-uploads/6da65231-3abc-48b0-a04e-b4ca632ac051.png" 
           alt="Character" 
