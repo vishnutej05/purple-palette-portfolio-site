@@ -53,12 +53,12 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Character image - rises smoothly from bottom center */}
+      {/* Character image - rises smoothly from bottom center with increased size */}
       <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-x-0 z-20 animate-[rise-from-bottom_1.5s_ease-out_1.5s_both]">
         <img 
           src="/lovable-uploads/7b7efddc-574a-4169-8b86-533e84823bef.png" 
           alt="Character" 
-          className="w-96 h-auto"
+          className="w-[500px] h-auto"
         />
       </div>
 
