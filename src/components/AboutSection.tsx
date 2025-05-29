@@ -18,7 +18,7 @@ const AboutSection = () => {
         <img 
           src="/lovable-uploads/3bff67ae-1813-44c4-bf13-3a2a16f74fd8.png" 
           alt="Purple decoration top right" 
-          className="w-32 h-32 opacity-30"
+          className="w-32 h-32 opacity-70"
         />
       </div>
       
@@ -26,11 +26,11 @@ const AboutSection = () => {
         <img 
           src="/lovable-uploads/c3b72709-c9f8-4939-b703-d6e317317917.png" 
           alt="Purple decoration bottom left" 
-          className="w-32 h-32 opacity-30"
+          className="w-32 h-32 opacity-70"
         />
       </div>
 
-      <div className="container mx-auto px-8 py-16">
+      <div className="container mx-auto px-6 py-16">
         {/* About Me Section */}
         <div className="mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-8">
@@ -51,29 +51,46 @@ const AboutSection = () => {
             My <span className="text-custom-purple">Skills</span>
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative">
-            {/* White/Black decorative elements for skills cards */}
-            <div className="absolute -top-8 -left-8 z-10">
-              <img 
-                src="/lovable-uploads/27a61506-4678-48b8-a7ed-2efed1543a8d.png" 
-                alt="White decoration top left" 
-                className="w-16 h-16 opacity-20"
-              />
-            </div>
-            
-            <div className="absolute -bottom-8 -right-8 z-10">
-              <img 
-                src="/lovable-uploads/9e97f7b2-3233-49ef-9e1c-8b9d75d23042.png" 
-                alt="Black decoration bottom right" 
-                className="w-16 h-16 opacity-20"
-              />
-            </div>
-
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {skills.map((skill, index) => (
               <div 
                 key={skill}
                 className="relative bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50 hover:border-custom-purple/50 transition-all duration-300 group"
               >
+                {/* Purple decorative elements for each card */}
+                <div className="absolute -top-2 -right-2 z-10">
+                  <img 
+                    src="/lovable-uploads/3bff67ae-1813-44c4-bf13-3a2a16f74fd8.png" 
+                    alt="Purple decoration" 
+                    className="w-8 h-8 opacity-60 group-hover:opacity-80 transition-opacity duration-300"
+                  />
+                </div>
+                
+                <div className="absolute -bottom-2 -left-2 z-10">
+                  <img 
+                    src="/lovable-uploads/c3b72709-c9f8-4939-b703-d6e317317917.png" 
+                    alt="Purple decoration" 
+                    className="w-8 h-8 opacity-60 group-hover:opacity-80 transition-opacity duration-300"
+                  />
+                </div>
+
+                {/* White/Black decorative elements for each card */}
+                <div className="absolute -top-2 -left-2 z-10">
+                  <img 
+                    src="/lovable-uploads/27a61506-4678-48b8-a7ed-2efed1543a8d.png" 
+                    alt="White decoration" 
+                    className="w-6 h-6 opacity-50 group-hover:opacity-70 transition-opacity duration-300"
+                  />
+                </div>
+                
+                <div className="absolute -bottom-2 -right-2 z-10">
+                  <img 
+                    src="/lovable-uploads/9e97f7b2-3233-49ef-9e1c-8b9d75d23042.png" 
+                    alt="Black decoration" 
+                    className="w-6 h-6 opacity-50 group-hover:opacity-70 transition-opacity duration-300"
+                  />
+                </div>
+
                 {/* Mandala pattern in each card */}
                 <div className="absolute top-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity duration-300">
                   <img 
